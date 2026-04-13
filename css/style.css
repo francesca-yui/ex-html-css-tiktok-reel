@@ -50,18 +50,32 @@ video {
 	position: relative;
 }
 
+
 .follow-dot {
 	background-color: red;
 	border-radius: 50%;
-	width: 5px;
-	height: 5px;
+	width: 6px;
+	height: 6px;
 	
 	display: flex;
     align-items: center;
     justify-content: center;
 
 	position: absolute;
-	translate: 2000% -50%;
+	translate: 1650% -50%;
+}
+
+.underline {
+	background-color: white;
+	width: 20px;
+	height: 3px;
+	
+	display: flex;
+    align-items: center;
+    justify-content: center;
+
+	position: absolute;
+	translate: 591% 700%;
 }
 
 .reel-header i {
@@ -107,6 +121,9 @@ footer {
 	flex-direction: column;
 	align-items: center;
 	font-size: x-small;
+}
+
+.footer-icon > div:not(.home) :not(.create img) {
 	opacity: 0.5;
 }
 
