@@ -36,16 +36,32 @@ video {
 	left: 1em;
 	right: 1em;
 	color: white;
-	font-size: small;
+	font-size: smaller;
 
 	/* Inserisci qui sotto 
 	le tue regole, se necessario. */
 }
 
 .menu {
-	justify-content: center;
-	gap: 50px;
+	display: flex;
+    gap: 10px;
 	opacity: 0.5;
+
+	position: relative;
+}
+
+.follow-dot {
+	background-color: red;
+	border-radius: 50%;
+	width: 5px;
+	height: 5px;
+	
+	display: flex;
+    align-items: center;
+    justify-content: center;
+
+	position: absolute;
+	translate: 2000% -50%;
 }
 
 .reel-header i {
@@ -79,19 +95,24 @@ footer {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0 1em;
-	position: relative;
+	padding: 0 5em;
+	font-size: x-small;
+
+	position: absolute;
+	translate: 0%;
 }
 
-.footer-icon > div {
+.footer-icon > div:not(.create) {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	font-size: x-small;
+	opacity: 0.5;
 }
 
 .footer-icon i {
 	font-size: 2em;
+
 }
 
 /* Create icon tiktok img */
@@ -107,8 +128,8 @@ footer {
 }
 
 .create img {
-	width: 150%;
-	height: 150%;
+	width: 210%;
+	height: 210%;
 	object-fit: cover;
 }
 
@@ -119,7 +140,7 @@ footer {
 	border-radius: 8px;
 	width: 2em;
 	height: 1.5em;
-	font-size: x-small ;
+	font-size: x-small;
 
 	display: flex;
     align-items: center;
@@ -141,7 +162,7 @@ footer {
 	justify-content: flex-start;
 	right: 0;
 	top: 40%;
-	bottom: 250px;
+	padding-bottom: 120px;
 	color: white;
 
 	/* Inserisci qui sotto 
@@ -154,16 +175,15 @@ footer {
 	justify-content: space-between;
 	align-items: center;
 	flex-grow: 1;
-	margin-top: 40px;
+	margin-top: 30px;
 }
 
 .icons-sidebar > div:not(.boolean-icon) {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	font-size: smaller;
-	gap: 2px;
-
+	font-size: small;
+	gap: 0.5px;
 }
 
 .icons-sidebar i {
