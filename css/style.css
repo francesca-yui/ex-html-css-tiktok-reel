@@ -56,7 +56,16 @@ video {
 .menu-item.active {
 	opacity: 1;
 	font-weight: bold;
-	border-bottom: 2px solid white;
+}
+
+.underline {
+	width: 20px;
+	height: 2px;
+	background-color: white;
+	position: absolute;
+    bottom: 9px;
+    left: 61%;
+
 }
 
 .follow-dot {
